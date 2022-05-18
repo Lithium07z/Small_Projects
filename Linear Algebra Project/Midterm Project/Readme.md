@@ -13,10 +13,10 @@ LU decomposition 이용
 
 예시 : (명령프롬프트 창에서 pip install matplotlib 필요) <br>
 import numpy as np <br>
-import matplotlib.pyplot as plt
-A=np.random.random((10,10))
-plt.imshow(A)
-plt.colorbar()
+import matplotlib.pyplot as plt <br>
+A=np.random.random((10,10)) <br>
+plt.imshow(A) <br>
+plt.colorbar() <br>
 plt.show()
 
 결과 : <br>
