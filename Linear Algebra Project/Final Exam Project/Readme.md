@@ -1,11 +1,12 @@
 # 기말고사 프로젝트 : 파이썬을 이용하여 변환행렬 이용해보기
 
-1. 변환행렬 참고사이트
-https://alyssaq.github.io/2015/visualising-matrices-and-affine-transformations-with-python/ 
-https://www.youtube.com/watch?v=WKkY_WNCj_Q 
-https://stackabuse.com/affine-image-transformations-in-python-with-numpy-pillow-and-opencv/ 
+1. 변환행렬 참고사이트 <br>
+https://alyssaq.github.io/2015/visualising-matrices-and-affine-transformations-with-python/  <br>
+https://www.youtube.com/watch?v=WKkY_WNCj_Q  <br>
+https://stackabuse.com/affine-image-transformations-in-python-with-numpy-pillow-and-opencv/  <br>
 
 2. 아래 코드를 실행해 본 다음 간단한 도형에 대하여 3차원 변환 행렬을 실행해 보시오. <br>
+
 // matplotlib color code: color='#eeefff' or, r, g, b, k, y, m ,c, y <br>
 
 import matplotlib.pyplot as plt <br>
@@ -59,7 +60,7 @@ ax.plot(C[:,0], C[:,1], C[:,2], color='k', alpha=0.6, marker='o') <br>
 ax.plot(D[:,0], D[:,1], D[:,2], color='k', alpha=0.6, marker='o') <br>
 
 
-//scaling transformation matrix <br>
+// scaling transformation matrix <br>
 sx=1/2 <br>
 sy=1/3 <br>
 sz=1 <br>
