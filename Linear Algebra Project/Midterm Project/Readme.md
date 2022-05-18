@@ -4,13 +4,14 @@
 T1, T2, T3, T4는 각자 임의 설정
 ![alt text](image01.png)
 
-2. 초기값과 경계값 이용하여 A의 값을 업데이트 -> 이웃 원소들 사이의 값의 최대값이 epsi 값보다 작아질 때 까지. epsi = 0.05
+2. 초기값과 경계값 이용하여 A의 값을 업데이트 -> 이웃 원소들 사이의 값의 최대값이 epsi 값보다 작아질 때 까지.
+   epsi = 0.05
 LU decomposition 이용
 파이썬 for 문 이용
 
 3. A의 값이 업데이트되는 과정을 colormap으로 그리기
 
-예시 : (명령프롬프트 창에서 pip install matplotlib 필요)
+예시 : (명령프롬프트 창에서 pip install matplotlib 필요) <br>
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -19,5 +20,5 @@ plt.imshow(A)
 plt.colorbar()
 plt.show()
 
-결과 : 
+결과 : <br>
 ![alt text](image02.png)
