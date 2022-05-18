@@ -6,7 +6,7 @@ https://www.youtube.com/watch?v=WKkY_WNCj_Q
 https://stackabuse.com/affine-image-transformations-in-python-with-numpy-pillow-and-opencv/ 
 
 2. 아래 코드를 실행해 본 다음 간단한 도형에 대하여 3차원 변환 행렬을 실행해 보시오.
-# matplotlib color code: color='#eeefff' or, r, g, b, k, y, m ,c, y
+// matplotlib color code: color='#eeefff' or, r, g, b, k, y, m ,c, y
 
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
@@ -14,17 +14,17 @@ import numpy as np
 import string
 import turtle as t
 
-# 3D figure 
+// 3D figure 
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d') # Axe3D object
 
-# points a, b and, c
+// points a, b and, c
 a1, a2, a3, a4, a5 = (0,0,1), (2,0,1), (2,3,1), (0,3,1), (0,0,1)
 b1, b2, b3, b4, b5 = (0,0,0), (2,0,0), (2,3,0), (0,3,0), (0,0,0)
 c1, c2, c3, c4, c5 = (0,0,1), (2,0,1), (2,0,0), (0,0,0), (0,0,1)
 d1, d2, d3, d4, d5 = (2,3,1), (0,3,1), (0,3,0), (2,3,0), (2,3,1)
 
-# matrix with row vectors of points
+// matrix with row vectors of points
 A = np.array([a1, a2, a3, a4, a5])
 Anew=np.zeros((A.shape[0],A.shape[1]+1))
 AT=np.zeros((A.shape[0],A.shape[1]))
@@ -59,7 +59,7 @@ ax.plot(C[:,0], C[:,1], C[:,2], color='k', alpha=0.6, marker='o')
 ax.plot(D[:,0], D[:,1], D[:,2], color='k', alpha=0.6, marker='o')
 
 
-# scaling transformation matrix
+//scaling transformation matrix
 sx=1/2
 sy=1/3
 sz=1
@@ -84,7 +84,7 @@ ax.plot(CT[:,0], CT[:,1], CT[:,2], color='r',alpha=0.6, marker='o')
 ax.plot(DT[:,0], DT[:,1], DT[:,2], color='r',alpha=0.6, marker='o')
 
 
-# overall scaling transformation matrix
+// overall scaling transformation matrix
 sall=2
 T_sall = np.array([[sall, 0, 0, 0], [0, sall, 0, 0], [0, 0, sall, 0], [0, 0, 0, 1]])
 
@@ -107,7 +107,7 @@ ax.plot(CTa[:,0], CTa[:,1], CTa[:,2], color='g',alpha=0.6, marker='o')
 ax.plot(DTa[:,0], DTa[:,1], DTa[:,2], color='g',alpha=0.6, marker='o')
 
 
-# rotational in z
+// rotational in z
 theta=np.pi*2/3
 cs=np.cos(theta)
 ss=np.sin(theta)
@@ -134,7 +134,7 @@ ax.plot(CTrz[:,0], CTrz[:,1], CTrz[:,2], color='b',alpha=0.6, marker='o')
 ax.plot(DTrz[:,0], DTrz[:,1], DTrz[:,2], color='b',alpha=0.6, marker='o')
 
 
-# shearing
+// shearing
 b= -0.85
 c= 0.25
 d= -0.75
